@@ -167,8 +167,8 @@ host=$(grep vmess: /root/config.txt 2>/dev/null|awk -F "//" '{print $2}'|base64 
 }
 banner
  setup () {
-echo -e "\e[36;3m Memperbarui Repository...\e[0m";sleep 1;apt update;sleep 2;clear
-banner;echo -e "\e[36;3m Menginstall Paket build dan Pendukung...\e[0m";sleep 1;apt install -y build-essential cmake git curl psmisc sshpass screen corkscrew openvpn python3-pip
+echo -e "\e[36;3m Memperbarui Repository...\e[0m";sleep 1;opkg update;sleep 2;clear
+banner;echo -e "\e[36;3m Menginstall Paket build dan Pendukung...\e[0m";sleep 1;opkg install -y build-essential cmake git curl psmisc sshpass screen corkscrew openvpn python3-pip
 python3 -m pip install requests beautifulsoup4;python3 -m pip install -U requests[socks];sleep 2;clear
 banner;echo -e "\e[36;3m Mengunduh Paket badvpn...\e[0m";sleep 1;rm -rf badvpn;git clone https://github.com/ambrop72/badvpn.git;cd badvpn;sleep 2;clear
 banner;echo -e "\e[36;3m Persiapan build....\e[0m";sleep 1;cmake . -DBUILD_NOTHING_BY_DEFAULT=1 -DBUILD_TUN2SOCKS=1;sleep 2;clear
