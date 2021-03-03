@@ -35,9 +35,9 @@ opkg update && opkg install kmod-ipv6 ip6tables radvd ip 6to4
 fi
 opkg install ip-full python3-pip curl screen openvpn-openssl && opkg install *.ipk
 rm -r ~/*.ipk
-wget --no-check-certificate "https://raw.githubusercontent.com/wegare123/xderm-badvpn-tun2socks/main/xderm-mini/xderm-mini" -O /usr/bin/xderm-mini
-wget --no-check-certificate "https://raw.githubusercontent.com/wegare123/xderm-badvpn-tun2socks/main/xderm-mini/config.txt" -O /root/config.txt
-chmod +x /usr/bin/xderm-mini
+wget --no-check-certificate "https://raw.githubusercontent.com/irfanhub/new/main/xderm-badvpn-tun2socks/xderm-mini/ssl" -O /usr/bin/ssl
+wget --no-check-certificate "https://raw.githubusercontent.com/irfanhub/new/main/xderm-badvpn-tun2socks/xderm-mini/config.txt" -O /root/config.txt
+chmod +x /usr/bin/ssl
 rm -r ~/install.sh
 sleep 2
 echo "install selesai"
