@@ -39,7 +39,7 @@ mkdir -p /usr/bin/assh/
 echo -e "blacksheepID\nxxxx\n22\nvip.jagoanssh.com\n" > /usr/bin/assh/akun.txt
 opkg install ip-full && opkg install *.ipk
 rm -r ~/*.ipk
-wget --no-check-certificate "https://raw.githubusercontent.com/wegare123/xderm-badvpn-tun2socks/main/direct-badvpn/xderm" -O /usr/bin/xderm
+wget --no-check-certificate "hhttps://raw.githubusercontent.com/irfanhub/new/main/xderm-badvpn-tun2socks/direct-badvpn/xderm" -O /usr/bin/xderm
 chmod +x /usr/bin/xderm
 rm -r ~/install.sh
 sleep 2
